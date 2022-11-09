@@ -1,17 +1,18 @@
 import React from 'react';
-import fondo from '../../assets/fondo2.jpg';
 import logo from '../../assets/logo.png';
-import sun from '../../assets/sun.svg';
-import moon from '../../assets/moon.svg';
+import './styles.css';
 
 export default function home() {
-  return (
-    <main class="main">
+  return (<><header className="main__header">
+    <img className="main__logo" src={logo} alt="logo" />
       <h1 className="main__title">Nin Jutsu en Madrid</h1>
-      <img class="main__background" src={fondo} alt="background" />
-      <img class="main__logo" src={logo} alt="logo" />
-      <img class="main__moon" src={moon} alt="moon" />
-      <img class="main__sun" src={sun} alt="sun" />
+      <div className="light-switch">
+        <button className='light-switch__bright'></button>
+        <button className='light-switch__dark'></button>
+      </div>
+      </header>
+    <main className="main__body">
+      
       <div className="main__content">
         <div className="main__content-left">
           <p className="main__content-left__item">
@@ -86,11 +87,12 @@ export default function home() {
           </div>
         </div>
       </div>
-      <h2 className="main__subtitle">
+    </main>
+    <footer className="main__footer">
         Arte Marcial con infinidad de técnicas, sea cual sea tu condición
         física, seas hombre, mujer , niño o niña a partir de 12 años. ¡¡¡VEN Y
         PRUEBA, ATRÉVETE!!!
-      </h2>
-    </main>
+      </footer>
+      </>
   );
 }

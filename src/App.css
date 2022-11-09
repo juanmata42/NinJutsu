@@ -1,0 +1,18 @@
+
+.bright-mode{
+        background-image: url('./assets/fondo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+.dark-mode{
+        background-image: url('./assets/fondo2.jpg');
+        background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+}
+.app{
+    height: 100%;
+    width: 100%;
+}

@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;800&display=swap');
 
 .main {
+  &__body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  font-family: 'Exo 2';
+  font-family: 'Exo 2';}
   &__title {
     color: #ff4a4d;
-    font-size: 95px;
+    font-size: 7vw;
     font-weight: 500;
   }
-  &__subtitle {
+  &__footer {
     color: #ff4a4d;
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: 800;
-    margin-top: 50px;
+    margin-top: 5vh;
   }
   &__background {
     position: absolute;
@@ -26,26 +27,11 @@
     z-index: -1;
   }
   &__logo {
-    position: absolute;
-    height: 250px;
-    left: 0;
-    top: 0;
+    max-height: 250px;
+    width: 30vw;
+    max-width: 250px;
   }
-  &__sun{
-    position: absolute;
-    height: 50px;
-    right: 0;
-    top: 0;
-    margin: 50px;
-  }
-  &__moon{
-    position: absolute;
-    height: 50px;
-    right: 0;
-    top: 0;
-    margin: 50px;
-    display: none;
-  }
+  
   &__content {
     display: flex;
     justify-content: center;
