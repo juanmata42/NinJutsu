@@ -1,13 +1,16 @@
 import React from 'react';
 import logo from '../../assets/logo.png';
-import './styles.css';
+import BujinkanLogo from './BujinkanLogo'
+import './styles.scss';
 
 export default function home() {
   return (<><header className="main__header">
     <img className="main__logo" src={logo} alt="logo" />
       <h1 className="main__title">Nin Jutsu en Madrid</h1>
       <div className="light-switch">
-        <button className='light-switch__bright'></button>
+        <button className='light-switch__bright'>
+          <BujinkanLogo />
+        </button>
         <button className='light-switch__dark'></button>
       </div>
       </header>
