@@ -4,7 +4,8 @@ import BujinkanLogo from './BujinkanLogo'
 import './styles.scss';
 
 export default function home() {
-  return (<><header className="main__header">
+  return (<>
+  <header className="main__header">
     <img className="main__logo" src={logo} alt="logo" />
       <h1 className="main__title">Nin Jutsu en Madrid</h1>
       <div className="light-switch">
@@ -15,7 +16,6 @@ export default function home() {
       </div>
       </header>
     <main className="main__body">
-      
       <div className="main__content">
         <div className="main__content-left">
           <p className="main__content-left__item">
