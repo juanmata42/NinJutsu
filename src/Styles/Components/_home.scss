@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;800&display=swap');
 
+//breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
 .main {
   &__body {
   display: flex;
@@ -7,6 +12,13 @@
   align-items: center;
   flex-flow: column;
   font-family: 'Exo 2';}
+  &__header {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 1vw;
+  }
   &__title {
     color: #ff4a4d;
     font-size: 7vw;
@@ -17,6 +29,7 @@
     font-size: 2vw;
     font-weight: 800;
     margin-top: 5vh;
+    padding: 5vw;
   }
   &__background {
     position: absolute;
@@ -99,5 +112,50 @@
         width: 90%;
       }
     }
+  }
+}
+
+.light-switch {
+  width: 90px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  //breakpoint
+  @media (max-width: $breakpoint-mobile) {
+    position:fixed;
+    right: 5vw;
+    z-index: 1;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.light-switch__bright {
+  width: 50%;
+  height: 100%;
+  border-radius: 30px 0 0 30px;
+  background-color: #fff;
+  border-style: none;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.light-switch__dark {
+  width: 50%;
+  height: 100%;
+  border-radius: 0 30px 30px 0;
+  background-color: #000;
+  border-style: none;
+
+  img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
   }
 }
