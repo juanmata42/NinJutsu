@@ -1,8 +1,6 @@
 import React from 'react';
 import logo from '../../assets/logo.png';
-import BujinkanLogo from './BujinkanLogo';
 import svgLogo from '../../assets/bujinkan-logo.svg';
-import './styles.scss';
 
 export default function home() {
   return (
@@ -22,27 +20,25 @@ export default function home() {
       <main className="main__body">
         <div className="main__content">
           <div className="main__content-left">
-            <p className="main__content-left__item">
-              <u>Instructor:</u>
-            </p>
-            <p className="main__content-left__description">
+            <h2 className="main__content-left__item">Instructor :</h2>
+            <h2 className="main__content-left__description">
               Javier Alfonso Tundidor
-            </p>
-            <p className="main__content-left__description">
+            </h2>
+            <h2 className="main__content-left__description">
               Email: <a href="mailto:javier@ninjutsumadrid.es">Javier</a>
-            </p>
-            <p className="main__content-left__item">
-              <u>Horario:</u>
-            </p>
-            <p className="main__content-left__description">
+            </h2>
+            <h2 className="main__content-left__item">Horario :</h2>
+            <h2 className="main__content-left__description">
               Lunes y Miércoles de 18:30 a 19.30.
-            </p>
-            <p className="main__content-left__item">
-              <u>Gimnasio:</u>
-            </p>
-            <p className="main__content-left__description">
+            </h2>
+            <h2 className="main__content-left__item">Gimnasio :</h2>
+            <h2 className="main__content-left__description">
               Metro: <br /> L1-Estrecho y L7-Francos Rodriguez
-            </p>
+              <br />
+              <a target="blank" href="https://www.clubtsunami.es/website/">
+                Club Deportivo Tsunami
+              </a>
+            </h2>
             <iframe
               title="map"
               className="main__content-left__map"
@@ -74,25 +70,13 @@ export default function home() {
             </p>
             <div className="main__content-right__container">
               <div className="main__content-right__container-column">
-                <p>
-                  <u>Gimnasio</u>
-                </p>
-                <a target="blank" href="https://www.clubtsunami.es/website/">
-                  Club Deportivo Tsunami
-                </a>
-              </div>
-              <div className="main__content-right__container-column">
-                <p>
-                  <u>Nuestra asociación</u>
-                </p>
+                <h2>Nuestra asociación</h2>
                 <a target="blank" href="https://www.jmcollado.com/">
                   Bujinkan Collado Dojo
                 </a>
               </div>
               <div className="main__content-right__container-column">
-                <p>
-                  <u>Otros Dojos en Madrid</u>
-                </p>
+                <h2>Otros Dojos en Madrid</h2>
                 <a
                   target="blank"
                   href="https://es-es.facebook.com/people/Nin-Jutsu-Tres-Cantos/100050039177804/"
@@ -107,9 +91,7 @@ export default function home() {
                 </a>
               </div>
               <div className="main__content-right__container-column">
-                <p>
-                  <u>Compra de Material</u>
-                </p>
+                <h2>Compra de Material</h2>
                 <a target="blank" href="https://fujimae.com/es/tiendas">
                   Tienda de Material en Madrid
                 </a>

@@ -7,29 +7,45 @@ $breakpoint-desktop: 1024px;
 
 .main {
   &__body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  font-family: 'Exo 2';}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    font-family: 'Exo 2';
+  }
   &__header {
     height: 20vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1vh 1vw;
+    //breakpoint
+    @media (max-width: $breakpoint-tablet) {
+      flex-flow: column;
+      height: fit-content;
+    }
   }
   &__title {
     color: #ff4a4d;
     font-size: 7vw;
     font-weight: 500;
+    //breakpoint
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 10vw;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
   &__footer {
     color: #ff4a4d;
-    font-size: 2vw;
+    font-size: 1.2rem;
     font-weight: 800;
-    margin-top: 5vh;
-    padding: 5vw;
+    padding: 30px 5vw;
+    text-align: justify;
+    //breakpoint
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 5vw;
+    }
   }
   &__background {
     position: absolute;
@@ -43,19 +59,39 @@ $breakpoint-desktop: 1024px;
     max-height: 250px;
     width: 30vw;
     max-width: 250px;
+    //breakpoint
+    @media (max-width: $breakpoint-tablet) {
+      width: 50vw;
+      max-width: 300px;
+    }
   }
-  
+
   &__content {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 80%;
+    width: 90%;
+    //breakpoint
+    @media (max-width: $breakpoint-tablet) {
+      flex-flow: column;
+      align-items: center;
+      flex-direction: column-reverse;
+      width: 100%;
+    }
     &-left {
       width: 20%;
       text-align: center;
+      //breakpoint
+      @media (max-width: $breakpoint-tablet) {
+        width: 100%;
+      }
       &__item {
         font-weight: 600;
         font-size: 1.2rem;
+        //breakpoint
+        @media (max-width: $breakpoint-tablet) {
+          font-size: 5vw;
+        }
         color: #ffeb6a;
         margin-bottom: 10px;
       }
@@ -63,10 +99,27 @@ $breakpoint-desktop: 1024px;
         font-weight: 600;
         margin: 0px;
         color: white;
+        font-size: 1.2rem;
+        //breakpoint
+        @media (max-width: $breakpoint-tablet) {
+          font-size: 5vw;
+        }
+        //breakpoint
+        a {
+          color: #fff;
+          @media (max-width: $breakpoint-tablet) {
+            color: #ff4a4d;
+          }
+        }
+        a:hover {
+          color: #ff4a4d;
+        }
       }
       &__map {
         margin-top: 20px;
-        width: 270px;
+        /* width: 270px;
+        height: 270px; */
+        width: 90%;
         height: 270px;
         border: 2px solid white;
         border-radius: 5px;
@@ -82,30 +135,58 @@ $breakpoint-desktop: 1024px;
       justify-content: center;
       flex-flow: column;
       align-items: center;
+      //breakpoint
+      @media (max-width: $breakpoint-tablet) {
+        width: 100%;
+        font-size: 4vw;
+      }
       &__container {
         display: flex;
         width: 90%;
         justify-content: center;
         align-items: flex-start;
         text-align: center;
+        //breakpoint
+        @media (max-width: $breakpoint-tablet) {
+          flex-flow: column;
+          align-items: center;
+          width: 100%;
+          gap: 30px;
+          text-align: initial;
+        }
         &-column {
           display: flex;
           justify-content: flex-start;
           align-items: center;
           flex-flow: column;
           width: 25%;
-          p{
+          gap: 10px;
+          //breakpoint
+          @media (max-width: $breakpoint-tablet) {
+            width: 90%;
+          }
+          h2 {
             color: #ffeb6a;
+            font-size: 1.2rem;
+            //breakpoint
+            @media (max-width: $breakpoint-tablet) {
+              margin: 0;
+              font-size: 5vw;
+            }
           }
-          a{
-              margin: 5px 0px;
-              font-size: 1rem;
-              text-decoration: none;
-              color: white;
+          a {
+            margin: 5px 0px;
+            text-decoration: underline;
+            color: white;
+            text-align: center;
+            @media (max-width: $breakpoint-tablet) {
+              margin: 0;
+              font-size: 5vw;
+            }
           }
-          a:hover{
+          a:hover {
             color: #ff4a4d;
-        }
+          }
         }
       }
       p {
@@ -120,10 +201,12 @@ $breakpoint-desktop: 1024px;
   height: 40px;
   display: flex;
   flex-direction: row;
+  //drop shadow
   //breakpoint
-  @media (max-width: $breakpoint-mobile) {
-    position:fixed;
-    right: 5vw;
+  @media (max-width: $breakpoint-tablet) {
+    position: fixed;
+    right: 10px;
+    top: 10px;
     z-index: 1;
   }
   button {
