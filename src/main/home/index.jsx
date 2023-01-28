@@ -1,18 +1,19 @@
-import React from 'react';
+
 import logo from '../../assets/logo.png';
 import svgLogo from '../../assets/bujinkan-logo.svg';
 
-export default function home() {
+export default function home(props) {
+  console.log(props.value)
   return (
     <>
       <header className="main__header">
         <img className="main__logo" src={logo} alt="logo" />
         <h1 className="main__title">Nin Jutsu en Madrid</h1>
         <div className="light-switch">
-          <button className="light-switch__bright">
+          <button onClick={props.value} className="light-switch__bright">
             <img src={svgLogo} alt="logo" />
           </button>
-          <button className="light-switch__dark">
+          <button onClick={props.value} className="light-switch__dark">
             <img src={svgLogo} alt="logo" />
           </button>
         </div>
