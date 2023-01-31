@@ -15,7 +15,6 @@ function App() {
     }
     return theme
   }
-  console.log(theme)
   return (
     <div className={`app ${theme}-mode`}>
       <Home className={`main-${theme}`} value={changeTheme}/>

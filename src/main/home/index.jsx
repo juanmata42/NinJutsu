@@ -3,7 +3,6 @@ import logo from '../../assets/logo.png';
 import svgLogo from '../../assets/bujinkan-logo.svg';
 
 export default function home(props) {
-  console.log(props.value)
   return (
     <>
       <header className="main__header">
