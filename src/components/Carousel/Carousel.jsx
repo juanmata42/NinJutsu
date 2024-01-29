@@ -6,7 +6,7 @@ import './carouselStyles.scss';
 
 const CarouselComponent = () => {
   const [centerSlidePercentage, setCenterSlidePercentage] = useState(window.innerWidth < 768 ? 80 : 33);
-  const imageContext = require.context('./CarouselImages', false, /\.(jpg|jpeg|png|gif|svg|JPG)$/);
+  const imageContext = require.context('./CarouselImages', false, /\.(jpg|jpeg|png|gif|svg|JPG|PNG)$/);
   const images = imageContext.keys().map(key => imageContext(key));
   useEffect(() => {
     const handleResize = () => {
