@@ -1,6 +1,6 @@
-
 import logo from '../../assets/logo.png';
 import svgLogo from '../../assets/bujinkan-logo.svg';
+import CarouselComponent from '../../components/Carousel/Carousel';
 
 export default function home(props) {
   return (
@@ -68,6 +68,7 @@ export default function home(props) {
               luxaciones y controles, técnicas con todo tipo de armas así como
               una parte más mental como meditación y canalización de la energía.
             </p>
+            <CarouselComponent/>
             <div className="main__content-right__container">
               <div className="main__content-right__container-column">
                 <h2>Nuestra asociación</h2>

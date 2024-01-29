@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "./static/css/main.2daf5d81.css",
-    "main.js": "./static/js/main.79008591.js",
-    "static/js/787.f99adb03.chunk.js": "./static/js/787.f99adb03.chunk.js",
+    "main.css": "./static/css/main.5a29a753.css",
+    "main.js": "./static/js/main.2c8c47af.js",
+    "static/js/787.4744067c.chunk.js": "./static/js/787.4744067c.chunk.js",
     "static/media/fondo.jpg": "./static/media/fondo.7fc847f4a63695166c04.jpg",
     "static/media/fondo2.jpg": "./static/media/fondo2.9b9cc9ee85746b38eeb2.jpg",
     "static/media/logo.png": "./static/media/logo.24273e8d01655b32ca98.png",
+    "static/media/3.png": "./static/media/3.d4823cba91b49557e2c2.png",
+    "static/media/1.png": "./static/media/1.aa65eb4612ad57c520c7.png",
+    "static/media/4.png": "./static/media/4.ca4333ac8909b370912c.png",
+    "static/media/2.png": "./static/media/2.7116c3a645ac5b7af47b.png",
     "static/media/bujinkan-logo.svg": "./static/media/bujinkan-logo.faf935e3505b2cfd6c4af8675ed9f497.svg",
+    "static/media/3triangles.svg": "./static/media/3triangles.52649671a724f2919e53.svg",
     "index.html": "./index.html",
-    "main.2daf5d81.css.map": "./static/css/main.2daf5d81.css.map",
-    "main.79008591.js.map": "./static/js/main.79008591.js.map",
-    "787.f99adb03.chunk.js.map": "./static/js/787.f99adb03.chunk.js.map"
+    "main.5a29a753.css.map": "./static/css/main.5a29a753.css.map",
+    "main.2c8c47af.js.map": "./static/js/main.2c8c47af.js.map",
+    "787.4744067c.chunk.js.map": "./static/js/787.4744067c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2daf5d81.css",
-    "static/js/main.79008591.js"
+    "static/css/main.5a29a753.css",
+    "static/js/main.2c8c47af.js"
   ]
 }
